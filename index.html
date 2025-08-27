@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beni Pham | Portfolio</title>
+    <link rel="preload" as="image" href="assets/placeholder-hero.jpg">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="logo">BENI PHAM</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero with background video -->
+    <section class="hero" id="top">
+      <div class="video-wrap">
+        <!-- Replace src with your own short, silent looped MP4 (landscape). -->
+        <video class="bg-video" muted loop playsinline autoplay poster="assets/background_hero.mp4">
+          <source src="assets/background_hero.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <h1>Welcome to my Portfolio</h1>
+        <p>Bringing every dimension to life.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="Scroll down">
+        <span class="chevron"></span>
+      </a>
+    </section>
+
+    <!-- Work grid -->
+    <main id="work" class="container section">
+  <div class="cards">
+    <a class="card reveal" href="projects/product.html">
+      <img src="assets/product/Orodion.png" alt="Product Renderings">
+      <span class="label">Product Renderings</span>
+    </a>
+
+    <a class="card card--tall reveal" href="projects/photogrammetry.html">
+    <img src="assets/hagia_sophia/Bogenblock_Rendering_FINAL.png" alt="Photogrammetry">
+    <span class="label">Photogrammetry</span>
+    </a>
+
+    <a class="card card--tall reveal" href="projects/motion.html">
+  <img src="assets/motion/motion_card_02.png" alt="Motion Design">
+  <span class="label">Motion Design</span>
+</a>
+
+    <a class="card reveal" href="projects/automotive.html">
+      <img src="assets/automotive/Julietta_Rendering_03.png" alt="Automotive Renderings">
+      <span class="label">Automotive Renderings</span>
+    </a>
+
+    <a class="card card--medium reveal" href="projects/other.html">
+  <img src="assets/background_hero_image.png" alt="Other Projects">
+  <span class="label">Other Projects</span>
+</a>
+
+
+  </div>
+</main>
+
+
+    <!-- About -->
+<section id="about" class="container section">
+  <div class="about-grid">
+    <!-- LEFT: text -->
+    <div class="about-text">
+      <h2>About</h2>
+      <p>
+        I’m <strong>Beni Pham</strong>, a 3D Generalist and Motion Designer from Stuttgart, Germany.
+        I create product/automotive visualization, photogrammetry and motion design, focusing on
+        turning ideas into engaging visual experiences while exploring new tools and workflows.
+      </p>
+    </div>
+
+    <!-- RIGHT: portrait -->
+    <figure class="about-photo">
+      <!-- replace with your real image -->
+      <img src="assets/me.jpg" alt="Portrait of Beni Pham">
+    </figure>
+  </div>
+
+  <!-- Skills -->
+<div class="skills">
+  <h3>Skills & Tools</h3>
+
+  <div class="tool-groups">
+    <!-- Adobe -->
+    <article class="tool-card">
+      <h4>Adobe Suite</h4>
+      <ul class="tool-list">
+        <li><img src="assets/icons/photoshop.png" alt="Photoshop"><span>Photoshop</span></li>
+        <li><img src="assets/icons/premiere.png" alt="Premiere Pro"><span>Premiere Pro</span></li>
+        <li><img src="assets/icons/aftereffects.png" alt="After Effects"><span>After Effects</span></li>
+        <!-- add Illustrator, Audition, etc. if you want -->
+      </ul>
+    </article>
+
+    <!-- 3D -->
+    <article class="tool-card">
+      <h4>3D Software</h4>
+      <ul class="tool-list">
+        <li><img src="assets/icons/blender.png" alt="Blender"><span>Blender</span></li>
+        <li><img src="assets/icons/maya.png" alt="Maya"><span>Maya</span></li>
+        <li><img src="assets/icons/3dsmax.png" alt="3ds Max"><span>3ds Max</span></li>
+      </ul>
+    </article>
+
+    <!-- Engines / Scanning -->
+    <article class="tool-card">
+      <h4>Engines & Photogrammetry</h4>
+      <ul class="tool-list">
+        <li><img src="assets/icons/unrealengine.png" alt="Unreal Engine"><span>Unreal Engine</span></li>
+        <li><img src="assets/icons/realityscan.png" alt="RealityScan"><span>RealityScan</span></li>
+        <li><img src="assets/icons/keyshot.png" alt="Keyshot"><span>Keyshot</span></li>
+      </ul>
+    </article>
+
+    <!-- Other (optional) -->
+    <article class="tool-card">
+      <h4>MS Office</h4>
+      <ul class="tool-list">
+        <li><img src="assets/icons/excel.png" alt="Excel"><span>Excel</span></li>
+        <li><img src="assets/icons/powerpoint.png" alt="Powerpoint"><span>Powerpoint</span></li>
+        <li><img src="assets/icons/word.png" alt="Word"><span>Word</span></li>
+      </ul>
+    </article>
+  </div>
+</div>
+
+<!-- Contact -->
+<section id="contact" class="container section">
+  <h2>Contact</h2>
+
+  <div class="contact-grid">
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Other Contact Options -->
+    <div class="contact-options">
+      <p>You can also reach me via:</p>
+      <ul>
+        <li>
+          <img src="assets/icons/mail.png" alt="Email">
+          <a href="mailto:benitqpham@gmail.com">benitqpham@gmail.com</a>
+        </li>
+        <li>
+          <img src="assets/icons/linkedin.png" alt="LinkedIn">
+          <a href="https://www.linkedin.com/in/benipham" target="_blank">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+    <footer class="site-footer container">
+      <p>&copy; <span id="year"></span> Beni Thanh Quyet Pham</p>
+      <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
